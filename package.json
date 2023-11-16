@@ -14,11 +14,11 @@
     "hardhat-plugin"
   ],
   "scripts": {
-    "lint:fix": "prettier --write 'src/**/*.{js,ts}' 'test/**/*.{js,ts}' && tslint --fix --config tslint.json --project tsconfig.json",
-    "lint": "tslint --config tslint.json --project tsconfig.json",
+    "lint:fix": "eslint --fix .",
+    "lint": "eslint .",
     "test": "mocha --exit --recursive 'test/**/*.test.ts'",
-    "build": "tsc",
-    "watch": "tsc -w",
+    "build": "npx tsc",
+    "watch": "npx tsc -w",
     "publish:release": "npm publish",
     "publish:next": "npm publish --tag next",
     "prepublishOnly": "npm run build"
@@ -35,15 +35,17 @@
     "@types/mocha": "^5.2.6",
     "@types/node": "^8.10.38",
     "chai": "^4.2.0",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "fs-extra": "^9.0.1",
+    "hardhat": "^2.0.9",
     "mocha": "^7.1.2",
     "prettier": "2.0.5",
     "ts-node": "^8.1.0",
-    "tslint": "^5.16.0",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.0.1",
-    "typescript": "^4.0.3"
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "hardhat": "^2.0.0"
+    "hardhat": "^2.0.5"
   }
 }
