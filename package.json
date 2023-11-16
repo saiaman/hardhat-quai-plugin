@@ -1,6 +1,6 @@
 {
   "name": "hardhat-quai-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hardhat TypeScript plugin for quai",
   "repository": "github:nomiclabs/hardhat-ts-plugin-boilerplate",
   "author": "Nomic Labs LLC",
